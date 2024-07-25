@@ -5,7 +5,7 @@
 
 ## Introduction
 
-GenoPath is a genomic analysis pipeline that combines efficiency and user-friendliness to ease tumor evolution analysis. It integrates cutting-edge bioinformatics tools for predicting clones, inferring cell migration routes, and more.
+GenoPath is a genomic analysis pipeline that combines efficiency and user-friendliness to ease tumor evolution analysis. It integrates cutting-edge bioinformatics tools for predicting clones, inferring cell migration routes, and more. The full manual is located on the home page, named GenoPath-Manual.
 
 ## Installation
 ### System Requirements
@@ -40,7 +40,7 @@ GenoPath is a genomic analysis pipeline that combines efficiency and user-friend
 
 ### Running GenoPath
 
-To run GenoPath with the provided sample dataset:
+To run GenoPath with the provided sample dataset. Navigate to where you downloaded GenoPath and use the files located in the Sample_Datasets folder:
 ```sh
 python genopath.py --run_process All --target_dir [path/to/dir] snv Sample_Datasets/input.tsv --max_graphs_per_tree 50 --control_file Sample_Datasets/control.txt --abundance_weighted True --sv_file Sample_Datasets/sv.txt
 ```
