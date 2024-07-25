@@ -85,6 +85,12 @@ python genopath.py --run_process All --target_dir [path/to/dir] snv Sample_Datas
     ```sh
     # Picante (All)
     python genopath.py --run_process CloneFinder Picante_all --target_dir [path/to/dir] snv [path/to/input.tsv] --abundance_weighted [True/False]
+    # Picante (Comdist)
+    python genopath.py --run_process CloneFinder Picante_comdist --target_dir [path/to/dir] snv [path/to/input.tsv] --abundance_weighted [True/False]
+    # Picante (Comdistnt)
+    python genopath.py --run_process CloneFinder Picante_comdistnt --target_dir [path/to/dir] snv [path/to/input.tsv] --abundance_weighted [True/False]
+    # Picante (Unifrac)
+    python genopath.py --run_process CloneFinder Picante_unifrac --target_dir [path/to/dir] snv [path/to/input.tsv] --abundance_weighted [True/False]
     ```
 
 ### Meltos
