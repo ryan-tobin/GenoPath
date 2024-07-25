@@ -27,7 +27,7 @@ GenoPath is a genomic analysis pipeline that combines efficiency and user-friend
 
 2. Set up the environment using Anaconda or Miniconda:
     ```sh
-    conda create -n genopath python=3.8
+    conda create -n genopath python=3.11
     conda activate genopath
     ```
 
