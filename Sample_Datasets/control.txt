@@ -1,0 +1,5 @@
+BaseMethod	QP
+Signature	3
+Signature List	SBS1,SBS2,SBS13,SBS18
+Signature ID	SAMPLE
+Rpath	Rscript
