@@ -1,0 +1,13 @@
+matplotlib
+numpy
+pandas
+graphviz
+Pillow
+requests
+networkx==2.8
+argparse
+scipy
+biopython
+pydot
+ete3
+PyQT5
