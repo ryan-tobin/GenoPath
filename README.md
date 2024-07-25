@@ -5,7 +5,11 @@
 
 ## Introduction
 
-GenoPath is a genomic analysis pipeline that combines efficiency and user-friendliness to ease tumor evolution analysis. It integrates cutting-edge bioinformatics tools for predicting clones, inferring cell migration routes, and more. The full manual is located on the home page, named GenoPath-Manual.
+GenoPath is a genomic analysis pipeline that combines efficiency and user-friendliness to ease tumor evolution analysis. It integrates cutting-edge bioinformatics tools for predicting clones, inferring cell migration routes, and more. You can view the manual by clicking [here](GenoPath-Manual.pdf).
+
+Or open it in a new tab using the link below:
+
+<a href="GenoPath-Manual.pdf" target="_blank">Open Manual in New Tab</a>
 
 ## Installation
 ### System Requirements
