@@ -111,7 +111,7 @@ python genopath.py --run_process All --target_dir [path/to/dir] snv Sample_Datas
     ```
 - **With OpenCRAVAT**
   ```sh
-  python driver_mutation_with_cravat.py -i [/path/to/input] -o [/path/to/output] -c [cancer_type ]
+  python driver_mutations_with_cravat.py -i [/path/to/input] -o [/path/to/output] -c [cancer_type ]
   ```
 
 ## Output Files
