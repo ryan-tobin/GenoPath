@@ -5,7 +5,7 @@
 
 ## Introduction
 
-GenoPath is a genomic analysis pipeline that combines efficiency and user-friendliness to ease tumor evolution analysis. It integrates cutting-edge bioinformatics tools for predicting clones, inferring cell migration routes, and more. You can download the manual by clicking here [Manual](gray-ailyn-73.tiiny.site).
+GenoPath is a genomic analysis pipeline that combines efficiency and user-friendliness to ease tumor evolution analysis. It integrates cutting-edge bioinformatics tools for predicting clones, inferring cell migration routes, and more. You can download the manual by clicking here [Manual](https://gray-ailyn-73.tiiny.site).
 
 Or open it in a new tab using the link below:
 
