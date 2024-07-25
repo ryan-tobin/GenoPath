@@ -42,7 +42,7 @@ GenoPath is a genomic analysis pipeline that combines efficiency and user-friend
 
 To run GenoPath with the provided sample dataset:
 ```sh
-python genopath.py --run_process All --target_dir [path/to/dir] --snv Sample_Datasets/input.tsv --max_graphs_per_tree 50 --control_file Sample_Datasets/control.txt --abundance_weighted True --sv_file Sample_Datasets/sv.txt
+python genopath.py --run_process All --target_dir [path/to/dir] snv Sample_Datasets/input.tsv --max_graphs_per_tree 50 --control_file Sample_Datasets/control.txt --abundance_weighted True --sv_file Sample_Datasets/sv.txt
 ```
 
 ## Pipeline Components
@@ -52,7 +52,7 @@ python genopath.py --run_process All --target_dir [path/to/dir] --snv Sample_Dat
 - **Purpose:** Infers tumor cell population genotypes from bulk sequencing data.
 - **Usage:** 
     ```sh
-    python genopath.py --run_process CloneFinder --target_dir [path/to/dir] --snv [path/to/input.tsv]
+    python genopath.py --run_process CloneFinder --target_dir [path/to/dir] snv [path/to/input.tsv]
     ```
 
 ### PathFinder
@@ -60,7 +60,7 @@ python genopath.py --run_process All --target_dir [path/to/dir] --snv Sample_Dat
 - **Purpose:** Reconstructs cancer cell migration routes.
 - **Usage:**
     ```sh
-    python genopath.py --run_process CloneFinder PathFinder --target_dir [path/to/dir] --snv [path/to/input.tsv] --primary [tumor] --max_graphs_per_tree [int]
+    python genopath.py --run_process CloneFinder PathFinder --target_dir [path/to/dir] snv [path/to/input.tsv] --primary [tumor] --max_graphs_per_tree [int]
     ```
 
 ### PhyloSignare
@@ -69,13 +69,13 @@ python genopath.py --run_process All --target_dir [path/to/dir] --snv Sample_Dat
 - **Usage:**
     ```sh
     # With Known Driver Mutations
-    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] --driver_mutation_file [path/to/file] --snv [path/to/input.tsv] --control_file [path/to/control_file]
+    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] --driver_mutation_file [path/to/file] snv [path/to/input.tsv] --control_file [path/to/control_file]
 
     # With Driver Mutation Calculation
-    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] --ref_alt_file [path/to/file] --tool CGI --email [email] --token [token] --cancer_type_input [cancer_type] --snv [path/to/input.tsv] --control_file [path/to/control_file]
+    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] --ref_alt_file [path/to/file] --tool CGI --email [email] --token [token] --cancer_type_input [cancer_type] snv [path/to/input.tsv] --control_file [path/to/control_file]
 
     # No Driver Mutation Analysis
-    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] --snv [path/to/input.tsv] --control_file [path/to/control_file]
+    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] snv [path/to/input.tsv] --control_file [path/to/control_file]
     ```
 
 ### Picante
@@ -84,7 +84,7 @@ python genopath.py --run_process All --target_dir [path/to/dir] --snv Sample_Dat
 - **Usage:**
     ```sh
     # Picante (All)
-    python genopath.py --run_process CloneFinder Picante_all --target_dir [path/to/dir] --snv [path/to/input.tsv] --abundance_weighted [True/False]
+    python genopath.py --run_process CloneFinder Picante_all --target_dir [path/to/dir] snv [path/to/input.tsv] --abundance_weighted [True/False]
     ```
 
 ### Meltos
@@ -92,7 +92,7 @@ python genopath.py --run_process All --target_dir [path/to/dir] --snv Sample_Dat
 - **Purpose:** Constructs tumor phylogeny trees based on structural variants.
 - **Usage:**
     ```sh
-    python genopath.py --run_process CloneFinder Meltos --target_dir [path/to/dir] --snv [path/to/input.tsv] --sv_file [path/to/sv_file]
+    python genopath.py --run_process CloneFinder Meltos --target_dir [path/to/dir] snv [path/to/input.tsv] --sv_file [path/to/sv_file]
     ```
 
 ### Driver Mutation Analysis
@@ -101,13 +101,13 @@ python genopath.py --run_process All --target_dir [path/to/dir] --snv Sample_Dat
 - **Usage:**
     ```sh
     # Calculating Driver Mutations
-    python genopath.py --run_process All --target_dir [path/to/dir] --ref_alt_file [path/to/file] --tool CGI --email [email] --token [token] --cancer_type_input [cancer_type] --snv [path/to/input.tsv] --sv_file [path/to/sv_file]
+    python genopath.py --run_process All --target_dir [path/to/dir] --ref_alt_file [path/to/file] --tool CGI --email [email] --token [token] --cancer_type_input [cancer_type] snv [path/to/input.tsv] --sv_file [path/to/sv_file]
     
     # Known Driver Mutations
-    python genopath.py --run_process All --target_dir [path/to/dir] --driver_mutation_file [path/to/file] --snv [path/to/input.tsv] --sv_file [path/to/sv_file]
+    python genopath.py --run_process All --target_dir [path/to/dir] --driver_mutation_file [path/to/file] snv [path/to/input.tsv] --sv_file [path/to/sv_file]
 
     # No Driver Mutation Analysis
-    python genopath.py --run_process All --target_dir [path/to/dir] --snv [path/to/input.tsv] --sv_file [path/to/sv_file]
+    python genopath.py --run_process All --target_dir [path/to/dir] snv [path/to/input.tsv] --sv_file [path/to/sv_file]
     ```
 - **With OpenCRAVAT**
   ```sh
