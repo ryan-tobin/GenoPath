@@ -69,13 +69,13 @@ python genopath.py --run_process All --target_dir [path/to/dir] snv Sample_Datas
 - **Usage:**
     ```sh
     # With Known Driver Mutations
-    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] --driver_mutation_file [path/to/file] snv [path/to/input.tsv] --control_file [path/to/control_file]
+    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] --driver_mutation_file [path/to/file] snv [path/to/input.tsv] [path/to/control_file]
 
     # With Driver Mutation Calculation
-    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] --ref_alt_file [path/to/file] --tool CGI --email [email] --token [token] --cancer_type_input [cancer_type] snv [path/to/input.tsv] --control_file [path/to/control_file]
+    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] --ref_alt_file [path/to/file] --tool CGI --email [email] --token [token] --cancer_type_input [cancer_type] snv [path/to/input.tsv] [path/to/control_file]
 
     # No Driver Mutation Analysis
-    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] snv [path/to/input.tsv] --control_file [path/to/control_file]
+    python genopath.py --run_process CloneFinder PhyloSignare --target_dir [path/to/dir] snv [path/to/input.tsv] [path/to/control_file]
     ```
 
 ### Picante
