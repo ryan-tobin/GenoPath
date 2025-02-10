@@ -50,7 +50,7 @@ from plot_scripts.meltos_plot import plot_meltos, find_most_recent_meltos_file
 from plot_scripts.hm_c_t import plot_heatmap
 from plot_scripts.CF_T_tree import clone_tree, tumor_tree
 
-# exclusively used to not download requirements if the pipeline is run >1 times ##
+# exclusively used to not download requirements if the pipeline is run >1 times #
 first_run_file = "first_run_done"
 if not os.path.exists(first_run_file):
     subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True)
@@ -607,9 +607,9 @@ def run_pipeline(args):
             t_()
 
     # ---------- Meltos ----------
-    if "All" in processes or "Meltos" in processes:
+    if "Meltos" in processes:
         print("\n----- Creating Meltos Input File ------\n")
-        if "All" in processes or "CloneFinder" in processes:
+        if "CloneFinder" in processes:
             SNV = args.input_file
         if "PathFinder" in processes and "CloneFinder" not in processes:
             SNV = initial_args.pathfinder_input
@@ -823,7 +823,7 @@ def parse_full_arguments(processes, remaining_argv):
             help="This value by default is set to TRUE. If you would like to turn off abundance weighting, set to FALSE",
         )
 
-    if "All" in processes or "Meltos" in processes:
+    if "Meltos" in processes:
         parser.add_argument("--sv_file", type=str,
                             help="Path to SV file for Meltos")
 
