@@ -5,11 +5,7 @@
 
 ## Introduction
 
-GenoPath is a genomic analysis pipeline that combines efficiency and user-friendliness to ease tumor evolution analysis. It integrates cutting-edge bioinformatics tools for predicting clones, inferring cell migration routes, and more. You can download the manual by clicking here [Manual](https://gray-ailyn-73.tiiny.site).
-
-Or open it in a new tab using the link below:
-
-<a href="GenoPath_Manual.pdf" target="_blank">Open Manual in New Tab</a>
+GenoPath is a genomic analysis pipeline that combines efficiency and user-friendliness to ease tumor evolution analysis. It integrates cutting-edge bioinformatics tools for predicting clones, inferring cell migration routes, and more. You can download the manual by clicking here [Manual](https://fuchsia-cloe-59.tiiny.site).
 
 ## Installation
 ### System Requirements
@@ -107,17 +103,17 @@ python genopath.py --run_process All --target_dir [path/to/dir] snv Sample_Datas
 
 ### Driver Mutation Analysis
 
-- **Purpose:** Identifies driver mutations in tumor sites.
+- **Purpose:** Identifies driver mutations in tumor sites. *NOTE* Meltos is not run with the All function and must be run separately.
 - **Usage:**
     ```sh
     # Calculating Driver Mutations
-    python genopath.py --run_process All --target_dir [path/to/dir] --ref_alt_file [path/to/file] --tool CGI --email [email] --token [token] --cancer_type_input [cancer_type] snv [path/to/input.tsv] --sv_file [path/to/sv_file]
+    python genopath.py --run_process All --target_dir [path/to/dir] --ref_alt_file [path/to/file] --tool CGI --email [email] --token [token] --cancer_type_input [cancer_type] snv [path/to/input.tsv]
     
     # Known Driver Mutations
-    python genopath.py --run_process All --target_dir [path/to/dir] --driver_mutation_file [path/to/file] snv [path/to/input.tsv] --sv_file [path/to/sv_file]
+    python genopath.py --run_process All --target_dir [path/to/dir] --driver_mutation_file [path/to/file] snv [path/to/input.tsv]
 
     # No Driver Mutation Analysis
-    python genopath.py --run_process All --target_dir [path/to/dir] snv [path/to/input.tsv] --sv_file [path/to/sv_file]
+    python genopath.py --run_process All --target_dir [path/to/dir] snv [path/to/input.tsv]
     ```
 - **With OpenCRAVAT**
   ```sh
